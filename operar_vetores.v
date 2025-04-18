@@ -5,5 +5,14 @@ module operar_vetores(
     output saida_or_logico,
     output [5:0] saida_not
 );
-	//insira seu código aqui
+
+// OR bit a bit
+assign saida_or_bit_a_bit = a | b;
+
+// OR lógico
+assign saida_or_logico = (|a) || (|b);
+
+// NOT (B concatenado com A)
+assign saida_not = ~{b, a};
+
 endmodule
